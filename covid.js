@@ -1,4 +1,3 @@
-
 function load_images(){
     //player , virus , gem
     enemy_img = new Image();
@@ -94,6 +93,19 @@ function init(){
         console.log("Mouse Released"); 
         player.moving = false;
     });
+    
+    cvs.addEventListener("touchstart", function(){
+        console.log("Touch Start"); 
+        player.moving = true;
+    }, false);
+    
+    cvs.addEventListener("touchend", function(){
+        console.log("Touch End"); 
+        player.moving = false;
+    }, false);
+  
+}
+
 }
 function isOverlap(rect1,rect2){
     if (rect1.x < rect2.x + rect2.w &&

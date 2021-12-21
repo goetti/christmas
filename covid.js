@@ -105,8 +105,6 @@ function init(){
         console.log("Touch End"); 
         player.moving = false;
     }, false);
-  
-}
 
 }
 function isOverlap(rect1,rect2){

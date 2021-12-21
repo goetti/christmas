@@ -94,12 +94,14 @@ function init(){
         player.moving = false;
     });
     
-    cvs.addEventListener("touchstart", function(){
+    cvs.addEventListener("touchstart", function(e){
+        e.preventDefault();
         console.log("Touch Start"); 
         player.moving = true;
     }, false);
     
-    cvs.addEventListener("touchend", function(){
+    cvs.addEventListener("touchend", function(e){
+        e.preventDefault();
         console.log("Touch End"); 
         player.moving = false;
     }, false);

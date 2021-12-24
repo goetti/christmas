@@ -167,7 +167,7 @@ function update(){
         game_over = true;
         level = level + 1;
         if(level > 5){
-            alert("Der Schluessel ist: 1234")
+            alert("Der Schluessel ist: 7212")
         }else {
             init()
         }

@@ -152,7 +152,7 @@ function update(){
             player.health -= 1000;
             if(player.health < 0){
                 draw();
-                alert(atob("NzIxMf=="))
+                alert("Test" + atob("NzIxMf=="))
                 lose.play();
                 alert("You Lose ");
                 game_over = true;

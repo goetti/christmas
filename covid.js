@@ -24,7 +24,7 @@ speed_factor = 2;
 level = 1;
 
 function get_speed_factor(level){
-    return 1 + (level-1) * 0.25
+    return 1 + (level-1) * 0.2
 }
 
 function init(){
